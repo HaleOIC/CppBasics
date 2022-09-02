@@ -1,0 +1,8 @@
+# vim
+*.swp
+
+#Execuables
+*.exe
+*.app
+# textbook
+*.pdf
