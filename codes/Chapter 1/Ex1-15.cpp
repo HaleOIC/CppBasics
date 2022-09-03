@@ -1,0 +1,7 @@
+/*
+the answer is 
+the error can be examined is 
+the syntaxial error
+type error
+and declaration error.
+*/
