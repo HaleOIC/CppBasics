@@ -393,6 +393,8 @@ constexpr int *q = nullptr;  //q是一个指向整数的常量指针
 
 - **类型别名（type alias）**是一个名字，它是某种类型的同义词。
 
+##### typedef 和 using 
+
 - 传统的方法是使用关键字  **typedef** 
 
 ```cpp
