@@ -1,0 +1,9 @@
+/*
+double dval; int ival; int *pi;
+dval = ival = pi = 0;
+// pi is a pointer to int.
+// can not assign to 'int' from type 'int *'
+// correct it:
+dval = ival = 0;
+pi = 0;
+*/
