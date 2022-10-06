@@ -2,26 +2,25 @@
 #include <string>
 #include <iostream>
 
-using std::string; using std::cout; using std::endl; using std::stack;
+using namespace std;
 
-int main()
-{
-    string expression{ "This is (pezy)." };
-    bool bSeen = false;
-    stack<char> stk;
+int main(){
+    string expression{ "This is (C++) ((C+++)lalala)." };
+    bool flag = false;
+    stack<char> S;
     for (const auto &s : expression)
     {
-        if (s == '(') { bSeen = true; continue; }
-        else if (s == ')') bSeen = false;
+        if (s == '(') { flag = true; continue; }
+        else if (s == ')') flag = false;
         
-        if (bSeen) stk.push(s);
+        if ( flag ) S.push(s);
     }
     
     string repstr;
-    while (!stk.empty())
+    while (!S.empty())
     {
-        repstr += stk.top();
-        stk.pop();
+        repstr += S.top();
+        S.pop();
     }
     
     expression.replace(expression.find("(")+1, repstr.size(), repstr);
