@@ -1,0 +1,1 @@
+map<string, size_t>:: const_iterator map_it = word.count().cbegin();

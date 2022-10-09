@@ -1,0 +1,1 @@
+std::map< std::string, std::vectort<int> >::iterator iter = mp.find( value );
